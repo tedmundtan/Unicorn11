@@ -5,8 +5,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Home from './components/pages/Home';
 import Plan from './components/pages/Plan';
+import Plan1 from './components/pages/Plan1';
 import Invest from './components/pages/Invest';
+import Chat from './components/pages/Chat';
 import Comingsoon from './components/pages/Comingsoon';
+
 // import background from './assets/background.jpg';
 
 class App extends Component {
@@ -19,7 +22,9 @@ class App extends Component {
           <div style={styles.overlay}>
             <Route exact path="/" component={Home} />
             <Route exact path="/plan" component={Plan} />
+            <Route exact path="/plan1" component={Plan1} />
             <Route exact path="/invest" component={Invest} />
+            <Route exact path="/chat" component={Chat} />
             <Route exact path="/comingsoon" component={Comingsoon} />
           </div>
         </div>

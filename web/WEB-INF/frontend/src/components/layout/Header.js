@@ -60,6 +60,12 @@ export class Header extends Component {
                             </Link>
                         </li>
                         <li className="nav-item">
+                            <Link to="/chat"
+                                className="nav-link">
+                                Chat
+                            </Link>
+                        </li>
+                        <li className="nav-item">
                             <button
                                 className="nav-link btn btn-secondary btn-sm text-light">
                                 Logout

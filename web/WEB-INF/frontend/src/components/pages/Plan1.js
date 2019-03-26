@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Redirect } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -16,25 +16,6 @@ export class Plan extends Component {
         targetDate: "",
     }
 
-
-    onClick = e => {
-        console.log("reidrect")
-        return (
-            <Redirect to="plan1" />
-        );
-
-        {/* 
-        axios.get('/json/projections', this.state)
-            .then(res => {
-                console.log(res.data)
-                this.setState({
-                    itemName: "",
-                    amount: "",
-                    targetDate: "",
-                })
-            })
-            .catch(err => console.log(err)) */}
-    }
 
     onChange = input => e => {
         this.setState({ [input]: e.target.value });
@@ -69,7 +50,7 @@ export class Plan extends Component {
                             />
                             <RaisedButton
                                 label="Continue"
-                                onClick={this.onClick.bind(this)}
+                                onClick={this.onClick}
                             />
                             <br />
                         </Fragment>
