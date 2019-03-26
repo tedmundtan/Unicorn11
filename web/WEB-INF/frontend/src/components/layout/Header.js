@@ -29,26 +29,26 @@ export class Header extends Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/"
+                            <Link to="/comingsoon"
                                 className="nav-link">
                                 My Accounts
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/"
+                            <Link to="/comingsoon"
                                 className="nav-link">
                                 Transfer
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/"
+                            <Link to="/comingsoon"
                                 className="nav-link">
                                 Pay
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/"
+                            <Link to="/comingsoon"
                                 className="nav-link">
                                 Cards
                             </Link>
