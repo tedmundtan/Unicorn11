@@ -9,8 +9,8 @@ import { axios } from 'axios';
 export class Plan extends Component {
     state = {
         itemName: "",
-        cost: "",
-        date: "",
+        amount: "",
+        targetDate: "",
     }
 
     componentDidUpdate() {
@@ -19,17 +19,17 @@ export class Plan extends Component {
 
     onSubmit = e => {
         e.prevenDefault();
-        /*
-        axios.post(`//URL`, this.state)
-        .then(res => {
-            console.log(res.data)
-            this.setState({
-                itemName: "",
-                cost: "",
-                date: "",
+
+        axios.get('/json/projections', this.state)
+            .then(res => {
+                console.log(res.data)
+                this.setState({
+                    itemName: "",
+                    amount: "",
+                    targetDate: "",
+                })
             })
-        })
-        .catch(err => console.log(err))*/
+            .catch(err => console.log(err))
     }
 
     onChange = input => e => {
@@ -37,7 +37,7 @@ export class Plan extends Component {
     }
 
     render() {
-        const { itemName, cost, date } = this.state;
+        const { itemName, amount, targetDate } = this.state;
         return (
             <div>
                 <br></br>
@@ -59,12 +59,12 @@ export class Plan extends Component {
                             <TextField hintText="How much does the item cost?"
                                 floatingLabelText="Price"
                                 onChange={this.onChange}
-                                value={cost}
+                                value={amount}
                             />
                             <DatePicker hintText="When do you want to buy it?"
                                 floatingLabelText="Date"
                                 onChange={this.onChange}
-                                value={date}
+                                value={targetDate}
                             />
                             <RaisedButton
                                 label="Continue"
