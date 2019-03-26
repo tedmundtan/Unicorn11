@@ -8,8 +8,8 @@ export class Plans extends Component {
             <div className="container">
                 <h1>Plan Savings</h1>
                 <h2>Monthly Savings</h2>
-                <p><strong>Average savings (past year)</strong>: $437</p>
-                <p><strong>Projected monthly savings (Feb 2019)</strong>: $5750</p>
+                <p><strong>Average savings (past year)</strong>: $4946</p>
+                <p><strong>Projected monthly savings (Feb 2019)</strong>: $5720</p>
                 <Barchart />
                 <Link to="plan" className="btn btn-danger btn-block">
                     Create a wish list!

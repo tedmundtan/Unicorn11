@@ -20,7 +20,7 @@ export class Home extends Component {
                 <br />
                 <div className="container" style={{ backgroundColor: "#f4f4f4" }}>
 
-                    <h3>Switch to our mobile apps for better financial tracking!</h3>
+                    <h3 className="text-center">Switch to our mobile apps for better financial tracking!</h3>
                     <div style={{ marginLeft: "300px", marginRight: "auto" }}>
                         <img src={apps} alt="Pay with Paylah!" style={{ alignSelf: "right" }} />
                     </div>

@@ -12,6 +12,7 @@ export class Piechart extends Component {
                 },
             },
             series: [{
+                name: "Savings",
                 data: [4799.45, 5121.46, 5217.28, 5646.14]
             }],
         }
