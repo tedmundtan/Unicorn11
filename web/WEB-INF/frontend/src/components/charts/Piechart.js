@@ -10,9 +10,9 @@ export class Piechart extends Component {
                     background: '#f4f4f4',
                     foreColor: '#333'
                 },
-                labels: ['Food', 'Transport', 'Cash Withdrawals', 'Others']
+                labels: ['F&B', 'Transfer', 'ATM', 'Transport']
             },
-            series: [44, 55, 13, 33],
+            series: [9, 71, 16, 4],
         }
     }
     render() {

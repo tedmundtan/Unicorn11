@@ -1,22 +1,28 @@
 import React, { Component } from 'react'
 import Chart from 'react-apexcharts';
 
-export class Piechart extends Component {
+export class Goals extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             options: {
                 xaxis: {
-                    categories: ['Sep 2018', 'Oct 2018', 'Nov 2018', 'Dec 2018']
-                },
+                    categories: ['iPad', 'iPhone', 'MacBook', 'holiday']
+                }
             },
-            series: [{
-                data: [4799.45, 5121.46, 5217.28, 5646.14]
-            }],
+            series: [
+                {
+                    name: 'Current',
+                    data: [400, 800, 1200, 2000]
+                },
+                {
+                    name: 'Goal',
+                    data: [600, 1200, 2000, 3000]
+                }
+            ]
         }
     }
-
     render() {
         return (
             <Chart
@@ -30,4 +36,4 @@ export class Piechart extends Component {
     }
 }
 
-export default Piechart
+export default Goals

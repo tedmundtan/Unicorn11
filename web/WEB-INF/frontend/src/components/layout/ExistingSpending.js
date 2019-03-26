@@ -6,6 +6,7 @@ export class ExistingSpending extends Component {
         return (
             <div className="container">
                 <h1>My Spending</h1>
+                <h4>1-Jan-2019 to 31-Jan-2019</h4>
                 <Piechart />
             </div>
         )

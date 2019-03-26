@@ -8,32 +8,20 @@ import { DatePicker } from 'material-ui';
 import { axios } from 'axios';
 
 import Goals from '../charts/Goals';
+import Goals1 from '../charts/Goals1';
 
 export class Plan extends Component {
     state = {
         itemName: "",
         amount: "",
         targetDate: "",
+        counter: "1"
     }
 
 
     onClick = e => {
-        console.log("reidrect")
-        return (
-            <Redirect to="plan1" />
-        );
-
-        {/* 
-        axios.get('/json/projections', this.state)
-            .then(res => {
-                console.log(res.data)
-                this.setState({
-                    itemName: "",
-                    amount: "",
-                    targetDate: "",
-                })
-            })
-            .catch(err => console.log(err)) */}
+        this.setState({ counter: "2" })
+        console.log(this.state)
     }
 
     onChange = input => e => {
@@ -79,7 +67,7 @@ export class Plan extends Component {
                 <div className="container" style={{ backgroundColor: "#f4f4f4" }}>
                     <br />
                     <h2>Current Progress</h2>
-                    <Goals />
+                    {(this.state.counter === '1') ? <Goals /> : <Goals1 />}
                 </div>
             </div>
 

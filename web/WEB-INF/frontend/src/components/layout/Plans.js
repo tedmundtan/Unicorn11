@@ -7,13 +7,15 @@ export class Plans extends Component {
         return (
             <div className="container">
                 <h1>Plan Savings</h1>
-                <h2>Average Savings</h2>
+                <h2>Monthly Savings</h2>
+                <p><strong>Average savings (past year)</strong>: $437</p>
+                <p><strong>Projected monthly savings (Feb 2019)</strong>: $5750</p>
                 <Barchart />
                 <Link to="plan" className="btn btn-danger btn-block">
                     Create a wish list!
                 </Link>
                 <Link to="invest" className="btn btn-danger btn-block">
-                    Invest!
+                    You are a consistent saver, try investing your funds!
                 </Link>
                 <br />
             </div>
